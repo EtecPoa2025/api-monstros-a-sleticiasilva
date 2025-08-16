@@ -35,7 +35,7 @@ app.listen(PORT, () => {
 
 app.get(
     '/monstros/random',( req, res) => {
-        if(monstros.leght > 0){
+        if(monstros.length > 0){
            const index = Math.floor(Math.random()* monstros.leght);
            res.json(monstros[index]);
         } else {
